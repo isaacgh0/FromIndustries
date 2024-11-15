@@ -13,6 +13,31 @@ fi-main-button {
 
     padding: 0.8rem 1.6rem;
     font-size: var(--font-size-base);
+
+    &.primary {
+      background-color: var(--clr-brand-primary);
+      color: var(--clr-brand-secondary);
+    }
+
+    &.tertiary {
+      background-color: var(--clr-brand-tertiary);
+      color: var(--clr-brand-light);
+    }
+  
+    &.info {
+      background-color: var(--clr-brand-info);
+      color: var(--clr-brand-secondary);
+    }
+  
+    &.danger {
+      background-color: var(--clr-brand-danger);
+      color: var(--clr-brand-secondary);
+    }
+  
+    &.success {
+      background-color: var(--clr-brand-success);
+      color: var(--clr-brand-secondary);
+    }
     
     &.medium {
       padding: 1rem 2rem;

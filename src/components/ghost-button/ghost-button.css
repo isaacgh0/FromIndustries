@@ -16,6 +16,56 @@ fi-ghost-button {
     
     padding: 0.8rem 1.6rem;
     font-size: var(--font-size-base);
+
+    &.primary {
+      color: var(--clr-brand-primary);
+      outline-color: var(--clr-brand-primary);
+
+      &:hover {
+        background-color: var(--clr-brand-primary);
+        color: var(--clr-brand-secondary);
+      }
+    }
+
+    &.tertiary {
+      color: var(--clr-brand-tertiary);
+      outline-color: var(--clr-brand-tertiary);
+
+      &:hover {
+        background-color: var(--clr-brand-tertiary);
+        color: var(--clr-brand-light);
+      }
+    }
+  
+    &.info {
+      color: var(--clr-brand-info);
+      outline-color: var(--clr-brand-info);
+
+      &:hover {
+        background-color: var(--clr-brand-info);
+        color: var(--clr-brand-secondary);
+      }
+    }
+  
+    &.danger {
+      color: var(--clr-brand-danger);
+      outline-color: var(--clr-brand-danger);
+
+      &:hover {
+        background-color: var(--clr-brand-danger);
+        color: var(--clr-brand-secondary);
+      }
+    }
+  
+    &.success {
+      color: var(--clr-brand-success);
+      outline-color: var(--clr-brand-success);
+
+      &:hover {
+        background-color: var(--clr-brand-success);
+        color: var(--clr-brand-secondary);
+      }
+    }
     
     &.medium {
       padding: 1rem 2rem;

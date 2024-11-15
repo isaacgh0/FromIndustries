@@ -38,8 +38,10 @@
   --anim-default: cubic-bezier(0.4, 0, 0.2, 1);
 
   --size-default-inline-padding: 2.2rem;
+  --size-default-block-padding: 1.8rem;
 
   --font-size-base: 0.95rem;
   --font-size-regular: 1.15rem;
   --font-size-medium: 1.35rem;
+  --font-size-large: 1.65rem;
 }
