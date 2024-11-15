@@ -51,6 +51,14 @@ section {
       margin-bottom: 14vh;
       opacity: 0;
     }
+
+    h1.title {
+      margin: 0 0 1rem 0;
+
+      img {
+        height: 10.4rem;
+      }
+    }
   
     p {
       font-size: var(--font-size-medium);
@@ -80,6 +88,7 @@ section {
     align-items: stretch;
     justify-content: flex-start;
     flex-wrap: wrap;
+    position: relative;
 
     &::before {
       content: '';
@@ -87,7 +96,7 @@ section {
       top: 0;
       left: 0;
       width: 100%;
-      height: 85rem;
+      height: 25rem;
       background-color: var(--clr-brand-primary);
       z-index: -1;
     }
