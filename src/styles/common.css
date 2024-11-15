@@ -1,0 +1,17 @@
+:root {
+  --clr-brand-primary: #FCB813;
+  --clr-brand-secondary: #221F20;
+  --clr-brand-tertiary: #3D7B93;
+  --clr-brand-info: #8479E8;
+  --clr-brand-danger: #FE5937;
+  --clr-brand-success: #3DFF86;
+  --clr-brand-light: #EFF6FF;
+  --clr-brand-shadow-light: #D3DEEB;
+  --clr-brand-shadow: #626A78;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
