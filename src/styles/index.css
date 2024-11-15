@@ -1,2 +1,74 @@
 @import './common.css';
 @import '../components/header/header.css';
+@import '../components/layout/layout.css';
+@import '../components/main-button/main-button.css';
+@import '../components/list-highlighter/list-highlighter.css';
+@import '../components/ghost-button/ghost-button.css';
+@import '../components/neural-network/neural-network.css';
+
+section {
+  &.landing {
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-brand-primary);
+    padding: var(--size-default-inline-padding);
+    position: relative;
+
+    fi-neural-network {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      z-index: 5;
+      opacity: 0;
+      animation: 5s reveal forwards;
+      animation-delay: 0.2s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: radial-gradient(
+          farthest-corner at 100% 0%,
+          rgba(var(--clr-brand-primary-rgb), 0) 0%,
+          rgba(var(--clr-brand-primary-rgb), 1) 86%
+        );
+      }
+    }
+
+    hr {
+      margin-top: auto;
+      margin-bottom: 14vh;
+      opacity: 0;
+    }
+  
+    p {
+      font-size: var(--font-size-medium);
+      color: var(--clr-brand-secondary);
+      width: 62%;
+      min-width: 300px;
+    }
+
+    div.actions {
+      display: flex;
+      margin-top: 2rem;
+
+      fi-main-button {
+        margin-right: 1.2rem;
+      }
+    }
+  
+  
+    fi-list-highlighter {
+      margin-top: auto;
+    }
+  }
+}

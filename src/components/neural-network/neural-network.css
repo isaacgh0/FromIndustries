@@ -1,0 +1,7 @@
+fi-neural-network {
+  display: flex;
+
+  canvas {
+    transform: scaleX(-1);
+  }
+}

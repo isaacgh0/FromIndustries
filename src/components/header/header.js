@@ -18,9 +18,10 @@ class Header extends HTMLElement {
     header.appendChild(nav)
 
     const links = [
-      { href: '/', text: 'Home' },
-      { href: '/about', text: 'About' },
-      { href: '/contact', text: 'Contact' }
+      { href: '/', text: 'Inicio' },
+      { href: '/productos', text: 'Productos' },
+      { href: '/nosotros', text: 'Acerca de' },
+      { href: '/Contacto', text: 'Contacto' }
     ]
 
     links.forEach(link => {

@@ -1,47 +1,18 @@
 @import './fonts.css';
-
-:root {
-  --clr-brand-primary: #FCB813;
-  --clr-brand-primary-rgb: 252, 184, 19;
-  --clr-brand-primary-filter: invert(77%) sepia(17%) saturate(3781%) hue-rotate(349deg) brightness(105%) contrast(98%);
-
-  --clr-brand-secondary: #221F20;
-  --clr-brand-secondary-rgb: 34, 31, 32;
-  --clr-brand-secondary-filter: invert(9%) sepia(5%) saturate(786%) hue-rotate(289deg) brightness(86%) contrast(89%);
-
-  --clr-brand-tertiary: #3D7B93;
-  --clr-brand-tertiary-rgb: 61, 123, 147;
-  --clr-brand-tertiary-filter: invert(50%) sepia(8%) saturate(3121%) hue-rotate(151deg) brightness(81%) contrast(75%);
-
-  --clr-brand-info: #8479E8;
-  --clr-brand-info-rgb: 132, 121, 232;
-  --clr-brand-info-filter: invert(54%) sepia(11%) saturate(4090%) hue-rotate(209deg) brightness(94%) contrast(93%);
-
-  --clr-brand-danger: #FE5937;
-  --clr-brand-danger-rgb: 254, 89, 55;
-  --clr-brand-danger-filter: invert(43%) sepia(34%) saturate(3213%) hue-rotate(339deg) brightness(102%) contrast(99%);
-
-  --clr-brand-success: #3DFF86;
-  --clr-brand-success-rgb: 61, 255, 134;
-  --clr-brand-success-filter: invert(83%) sepia(21%) saturate(1396%) hue-rotate(78deg) brightness(101%) contrast(101%);
-
-  --clr-brand-light: #EFF6FF;
-  --clr-brand-light-rgb: 239, 246, 255;
-  --clr-brand-light-filter: invert(82%) sepia(2%) saturate(3923%) hue-rotate(198deg) brightness(111%) contrast(116%);
-
-  --clr-brand-shadow-light: #D3DEEB;
-  --clr-brand-shadow-light-rgb: 211, 222, 235;
-  --clr-brand-shadow-light-filter: invert(88%) sepia(30%) saturate(138%) hue-rotate(183deg) brightness(95%) contrast(94%);
-
-  --clr-brand-shadow: #626A78;
-  --clr-brand-shadow-rgb: 98, 106, 120;
-  --clr-brand-shadow-filter: invert(42%) sepia(18%) saturate(339%) hue-rotate(179deg) brightness(92%) contrast(88%);
-
-  --anim-default: cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import './variables.css';
+@import './animations.css';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6,
+label, input, button, p, span, a, li {
+  font-family: 'Poppins', sans-serif;
 }

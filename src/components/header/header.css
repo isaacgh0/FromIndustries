@@ -3,11 +3,13 @@ header {
   margin: 0;
   padding: 0;
   background-color: var(--clr-brand-primary);
-  padding-inline: 2.2rem;
+  padding-inline: var(--size-default-inline-padding);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(var(--clr-brand-secondary-rgb), 0.5);
+  z-index: 10;
 
   &:has(a.active[href="/"]) {
     position: fixed;
@@ -31,7 +33,6 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      font-size: 1.2rem;
       height: fit-content;
       gap: 1rem;
 
@@ -42,8 +43,7 @@ header {
         a {
           color: var(--clr-brand-secondary);
           text-decoration: none;
-          font-family: 'Poppins', sans-serif;
-          font-size: 1.05rem;
+          font-size: var(--font-size-base);
           font-weight: 700;
           transition: color 0.2s var(--anim-default);
           padding: 1.4rem 1rem;

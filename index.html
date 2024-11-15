@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
@@ -11,9 +11,31 @@
   <body>
     <template>
       <fi-layout styles="./src/styles/index.css">
+        <link rel="stylesheet" href="./src/styles/index.css">
+        <section class="landing">
+          <fi-neural-network></fi-neural-network>
+          
+          <hr>
+          <h1 class="title">
+            <span>FROM</span>
+            <span>INDUSTRIES</span>
+          </h1>
+          <p>
+            <b>Desarrollo e implementacion de soluciones de softare y hardware.</b> Ofrecemos
+            nuestro servicio de forma remota a todo México y de forma presencial en la
+            zona metropolitana central del país.
+          </p>
+
+          <div class="actions">
+            <fi-main-button label="Contactar" size="medium" class="landing-contact"></fi-main-button>
+            <fi-ghost-button label="Productos" size="medium" class="landing-products"></fi-ghost-button>
+          </div>
+
+          <fi-list-highlighter words="Diseño,Industrial,Pixel perfect,Soluciones,Desarrollo,Software,Hardware,Network,Productos,Precio,Mexico,Aplicaciones,Internet,Web,Productos,Precio,Inteligencia artificial,Office,Computadoras personales"></fi-list-highlighter>
+        </section>
       </fi-layout>
     </template>
     
-    <script type="module" src="./src/scripts/main.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>

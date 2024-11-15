@@ -1,0 +1,29 @@
+fi-main-button {
+  width: fit-content;
+  display: flex;
+
+  button.main-button {
+    background-color: var(--clr-brand-secondary);
+    color: var(--clr-brand-primary);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    padding: 0.8rem 1.6rem;
+    font-size: var(--font-size-base);
+    
+    &.medium {
+      padding: 1rem 2rem;
+      font-size: var(--font-size-regular);
+      font-weight: bold;
+    }
+
+    &.large {
+      padding: 1.2rem 2.4rem;
+      font-size: var(--font-size-medium);
+      font-weight: bold;
+    }
+  }
+}

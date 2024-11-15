@@ -1,2 +1,6 @@
 import '../components/header/header'
 import '../components/layout/layout'
+import '../components/main-button/main-button'
+import '../components/list-highlighter/list-highlighter'
+import '../components/ghost-button/ghost-button'
+import '../components/neural-network/neural-network'
