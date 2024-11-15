@@ -14,3 +14,33 @@
   from { opacity: 0 }
   to { opacity: 1 }
 }
+
+@keyframes background-primary-contrast {
+  from { background-color: var(--clr-brand-primary) }
+  to { background-color: var(--clr-brand-secondary) }
+}
+
+@keyframes filter-primary-contrast {
+  from { filter: var(--clr-brand-primary-filter); }
+  to { filter: none }
+}
+
+@keyframes color-primary-contrast {
+  from { color: var(--clr-brand-primary) }
+  to { color: var(--clr-brand-secondary) }
+}
+
+@keyframes background-dark-contrast {
+  from { background-color: var(--clr-brand-secondary) }
+  to { background-color: var(--clr-brand-primary) }
+}
+
+@keyframes color-dark-contrast {
+  from { color: var(--clr-brand-secondary) }
+  to { color: var(--clr-brand-primary) }
+}
+
+@keyframes filter-dark-contrast {
+  from { filter: none }
+  to { filter: var(--clr-brand-primary-filter); }
+}

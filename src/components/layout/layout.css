@@ -2,8 +2,9 @@ fi-layout {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--clr-brand-light);
   height: clamp(100vh, 100vh, 100vh);
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-color: var(--clr-brand-light) var(--clr-brand-secondary);
+  scrollbar-width: auto;
 }
