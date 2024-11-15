@@ -7,10 +7,14 @@ class Header extends HTMLElement {
     const url = new URL(window.location.href)
 
     const header = document.createElement('header')
+    const img = document.createElement('img')
     const nav = document.createElement('nav')
     const ul = document.createElement('ul')
 
+    img.src = './src/assets/icons/brand-icon.svg'
+
     nav.appendChild(ul)
+    header.appendChild(img)
     header.appendChild(nav)
 
     const links = [
@@ -26,7 +30,10 @@ class Header extends HTMLElement {
       a.href = link.href
       a.textContent = link.text
 
-      url.pathname === link.href && a.classList.add('active')
+      if (url.pathname === link.href) {
+        a.classList.add('active')
+        a.addEventListener('click', e => e.preventDefault())
+      }
 
       li.appendChild(a)
       ul.appendChild(li)

@@ -1,2 +1,5 @@
 const body = document.querySelector('body')
-export const shadow = body.attachShadow({ mode: 'open' })
+const shadow = body.attachShadow({ mode: 'open' })
+const template = document.querySelector('template')
+
+shadow.appendChild(template.content.cloneNode(true))
