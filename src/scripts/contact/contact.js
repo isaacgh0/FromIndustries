@@ -1,0 +1,1 @@
+import shadow from '../main.js'
