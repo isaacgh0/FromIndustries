@@ -6,6 +6,7 @@
 @import '../components/ghost-button/ghost-button.css';
 @import '../components/neural-network/neural-network.css';
 @import '../components/content-card/content-card.css';
+@import '../components/footer/footer.css';
 
 section {
   padding: var(--size-default-inline-padding);
@@ -98,7 +99,7 @@ section {
       width: 100%;
       height: 25rem;
       background-color: var(--clr-brand-primary);
-      z-index: -1;
+      z-index: -5;
     }
     
     & > div {

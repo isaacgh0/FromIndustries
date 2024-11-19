@@ -1,6 +1,11 @@
 fi-content-card {
   display: flex;
   width: fit-content;
+  transition: transform 0.15s var(--anim-default);
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
 
   div.content-card.wrapper {
     width: 30vw;
@@ -10,13 +15,22 @@ fi-content-card {
     display: flex;
     flex-direction: column;
     background-color: var(--clr-brand-secondary);
-
-    img {
+    overflow: hidden;
+    
+    div.img-wrapper {
       width: 100%;
       aspect-ratio: 16/9;
-      object-fit: cover;
-      object-position: center;
+      display: flex;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        object-position: center;
+      }
     }
+
 
     div.bottom-wrapper {
       width: 100%;

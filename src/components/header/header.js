@@ -1,4 +1,11 @@
 class Header extends HTMLElement {
+  links = [
+    { href: '/',          text: 'Inicio' },
+    { href: '/productos', text: 'Productos' },
+    { href: '/nosotros',  text: 'Acerca de' },
+    { href: '/contacto',  text: 'Contacto' }
+  ]
+
   constructor() {
     super()
   }
@@ -17,21 +24,14 @@ class Header extends HTMLElement {
     header.appendChild(img)
     header.appendChild(nav)
 
-    const links = [
-      { href: '/', text: 'Inicio' },
-      { href: '/productos', text: 'Productos' },
-      { href: '/nosotros', text: 'Acerca de' },
-      { href: '/Contacto', text: 'Contacto' }
-    ]
-
-    links.forEach(link => {
+    this.links.forEach(({ href, text }) => {
       const li = document.createElement('li')
       const a = document.createElement('a')
 
-      a.href = link.href
-      a.textContent = link.text
+      a.href = href
+      a.textContent = text
 
-      if (url.pathname === link.href) {
+      if (url.pathname === href) {
         a.classList.add('active')
         a.addEventListener('click', e => e.preventDefault())
       }

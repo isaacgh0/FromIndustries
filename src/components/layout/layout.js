@@ -14,6 +14,7 @@ class Layout extends HTMLElement {
     const fiHeader = document.createElement('fi-header')
     const main = document.createElement('main')
     const slot = document.createElement('slot')
+    const fiFooter = document.createElement('fi-footer')
 
     link.setAttribute('rel', 'stylesheet')
     link.setAttribute('href', styles)
@@ -23,6 +24,7 @@ class Layout extends HTMLElement {
     this.shadowRoot.appendChild(link)
     this.shadowRoot.appendChild(fiHeader)
     this.shadowRoot.appendChild(main)
+    this.shadowRoot.appendChild(fiFooter)
   }
 }
 

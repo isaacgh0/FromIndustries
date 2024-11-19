@@ -1,4 +1,4 @@
-import shadow from './main.js'
+import shadow from '../main.js'
 
 const cards = [
   {

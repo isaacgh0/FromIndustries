@@ -25,6 +25,7 @@ class ContentCard extends HTMLElement {
   }
 
   setImage(wrapper) {
+    const imgWrapper = document.createElement('div')
     const imgSrc = this.getAttribute('imgSrc')
     const name = this.getAttribute('name')
 
@@ -35,7 +36,10 @@ class ContentCard extends HTMLElement {
     image.src = imgSrc
     image.alt = name || ''
 
-    wrapper.appendChild(image)
+    imgWrapper.classList.add('img-wrapper')
+    imgWrapper.appendChild(image)
+
+    wrapper.appendChild(imgWrapper)
   }
 
   setText(wrapper) {
