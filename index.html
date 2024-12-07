@@ -5,42 +5,82 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FromIndustries</title>
-    <link rel="stylesheet" href="./src/styles/common.css">
-    <script type="module" src="./src/scripts/index/index.components.js"></script>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script type="module" src="./src/scripts/components.js"></script>
   </head>
   <body>
     <template>
-      <fi-layout styles="./src/styles/index.css">
-        <link rel="stylesheet" href="./src/styles/index.css">
-        <section class="landing">
-          <fi-neural-network></fi-neural-network>
-          
-          <hr>
-          <h1 class="title">
-            <img src="./src/assets/icons/brand-logo.svg" alt="form industries">
-          </h1>
-          <p>
-            <b>Desarrollo e implementacion de soluciones de softare y hardware.</b> Ofrecemos
-            nuestro servicio de forma remota a todo México y de forma presencial en la
-            zona metropolitana central del país.
-          </p>
+      <fi-layout>
+        <fi-dynamic-content-loader>
+          <fi-page content="index">
+            <template>
+              <section class="landing">
+                <fi-neural-network></fi-neural-network>
+                
+                <hr>
+                <h1 class="title">
+                  <img src="./src/assets/icons/brand-logo.svg" alt="form industries">
+                </h1>
+                <p>
+                  <b>Desarrollo e implementacion de soluciones de softare y hardware.</b> Ofrecemos
+                  nuestro servicio de forma remota a todo México y de forma presencial en la
+                  zona metropolitana central del país.
+                </p>
+              
+                <div class="actions">
+                  <fi-main-button label="Contactar" size="medium" class="landing-contact"></fi-main-button>
+                  <fi-ghost-button label="Productos" size="medium" class="landing-products"></fi-ghost-button>
+                </div>
+              
+                <fi-list-highlighter
+                  words="Diseño,Industrial,Pixel perfect,Soluciones,Desarrollo,Software,Hardware,Network,Productos,Precio,Mexico,Aplicaciones,Internet,Web,Productos,Precio,Inteligencia artificial,Office,Computadoras personales"
+                  >
+                </fi-list-highlighter>
+              </section>
+              
+              <section class="business-activity">
+                <div>
+                  <fi-content-card header="Calidad industrial" text="Somos una empresa de calidad industrial con profesionales especializados en el desarrollo y trabajo en tecnologia" imgSrc="https://fromindustries.sirv.com/Images/fi-landing-support.webp" name="industry" primary="Contactar" secondary="Adios"></fi-content-card>
+                </div>
+              </section>
 
-          <div class="actions">
-            <fi-ghost-button label="Productos" size="medium" class="landing-products"></fi-ghost-button>
-            <fi-main-button label="Contactar" size="medium" class="landing-contact"></fi-main-button>
-          </div>
+              <section class="our-work">
+                <h2>Nuestro trabajo</h2>
+              </section>
+            </template>
+          </fi-page>
 
-          <fi-list-highlighter
-            words="Diseño,Industrial,Pixel perfect,Soluciones,Desarrollo,Software,Hardware,Network,Productos,Precio,Mexico,Aplicaciones,Internet,Web,Productos,Precio,Inteligencia artificial,Office,Computadoras personales"
-            >
-          </fi-list-highlighter>
-        </section>
+          <fi-page content="products">
+            <template>
+              <h1>Esto es un producto</h1>
+            </template>
+          </fi-page>
 
-        <section class="business-activity">
-        </section>
+          <fi-page content="about">
+            <template>
+              <h1>Esto es un about</h1>
+            </template>
+          </fi-page>
+
+          <fi-page content="contact">
+            <template>
+              <section class="main">
+                <div class="message">
+                  <fi-block-message severity="info" message="Recuerda que si ya tienes algún producto con nosotros, puedes contactarnos a traves del soporte oficial y recibir ayuda mas rápido."></fi-block-message>
+                </div>
+                <div class="form">
+
+                </div>
+                <div class="alternatives">
+                  <p>Nuestros medios de contacto</p>
+                </div>
+              </section>
+            </template>
+          </fi-page>
+        </fi-dynamic-content-loader>
       </fi-layout>
     </template>
-    
-    <script type="module" src="./src/scripts/index/index.js"></script>
+
+    <script type="module" src="./src/scripts/main.js"></script>
   </body>
 </html>

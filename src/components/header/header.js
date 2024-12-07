@@ -1,3 +1,5 @@
+import icon from '../../assets/icons/brand-icon.svg'
+
 class Header extends HTMLElement {
   links = [
     { href: '/',          text: 'Inicio' },
@@ -18,7 +20,7 @@ class Header extends HTMLElement {
     const nav = document.createElement('nav')
     const ul = document.createElement('ul')
 
-    img.src = './src/assets/icons/brand-icon.svg'
+    img.src = `${icon}`
 
     nav.appendChild(ul)
     header.appendChild(img)
@@ -41,6 +43,15 @@ class Header extends HTMLElement {
     })
 
     this.appendChild(header)
+  }
+
+  reload() {
+    const url = new URL(window.location.href)
+    const active = this.querySelector('a.active')
+    const next = this.querySelector(`a[href="${url.pathname}"]`)
+    
+    active && active.classList.remove('active')
+    next && next.classList.add('active')
   }
 }
 

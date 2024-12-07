@@ -6,6 +6,7 @@ fi-main-button {
     background-color: var(--clr-brand-secondary);
     color: var(--clr-brand-primary);
     border: none;
+    border-radius: 0.5rem;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.1rem;

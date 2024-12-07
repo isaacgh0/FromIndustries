@@ -1,0 +1,17 @@
+@import './fonts.css';
+@import './variables.css';
+@import './animations.css';
+@import './normalize.css';
+
+@import '../components/header/header.css';
+@import '../components/layout/layout.css';
+@import '../components/main-button/main-button.css';
+@import '../components/list-highlighter/list-highlighter.css';
+@import '../components/ghost-button/ghost-button.css';
+@import '../components/neural-network/neural-network.css';
+@import '../components/content-card/content-card.css';
+@import '../components/footer/footer.css';
+@import '../components/block-message/block-message.css';
+
+@import './index.css';
+@import './contact.css';

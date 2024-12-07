@@ -77,8 +77,8 @@ class ContentCard extends HTMLElement {
     btnPrimary.setAttribute('size', 'medium')
     btnPrimary.setAttribute('theme', validThemes.includes(theme) ? theme : 'primary')
     
-    secondary && actionWrapper.appendChild(btnSecondary)
     primary && actionWrapper.appendChild(btnPrimary)
+    secondary && actionWrapper.appendChild(btnSecondary)
 
     actionWrapper.classList.add('action-wrapper')
     if (primary || secondary) wrapper.appendChild(actionWrapper)

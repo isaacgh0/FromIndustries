@@ -37,6 +37,7 @@
 
   --anim-default: cubic-bezier(0.4, 0, 0.2, 1);
 
+  --size-block-padding: 2.4rem;
   --size-default-inline-padding: 2.2rem;
   --size-default-block-padding: 1.8rem;
 

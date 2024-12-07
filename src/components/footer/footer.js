@@ -1,3 +1,8 @@
+import logo from '../../assets/icons/brand-logo.svg'
+import linkedin from '../../assets/icons/linkedin-square.svg'
+import instagram from '../../assets/icons/instagram.svg'
+import twitter from '../../assets/icons/twitter.svg'
+
 class Footer extends HTMLElement {
   links = [
     [
@@ -13,9 +18,9 @@ class Footer extends HTMLElement {
   ]
   
   social = [
-    { name: 'Linkedin',  url: 'https://mx.linkedin.com/',   icon: 'linkedin-square' },
-    { name: 'Instagram', url: 'https://www.instagram.com/', icon: 'instagram' },
-    { name: 'twitter',   url: 'https://x.com/',             icon: 'twitter' },
+    { name: 'Linkedin',  url: 'https://mx.linkedin.com/',   icon: `${linkedin}` },
+    { name: 'Instagram', url: 'https://www.instagram.com/', icon: `${instagram}` },
+    { name: 'twitter',   url: 'https://x.com/',             icon: `${twitter}` },
   ]
 
   constructor() {
@@ -24,7 +29,7 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     const footer = document.createElement('footer')
-    const logo = document.createElement('img')
+    const footerLogo = document.createElement('img')
     const mainWrapper = document.createElement('div')
     const bottomWrapper = document.createElement('div')
     const linksWrapper = document.createElement('div')
@@ -38,6 +43,7 @@ class Footer extends HTMLElement {
 
         link.innerText = text
         link.href = url
+        link.classList.add('external-link')
 
         item.appendChild(link)
         list.appendChild(item)
@@ -48,7 +54,7 @@ class Footer extends HTMLElement {
 
     mainWrapper.classList.add('main-wrapper')
 
-    logo.src = './src/assets/icons/brand-logo.svg'
+    footerLogo.src = `${logo}`
 
     this.social.forEach(({ name, url, icon }) => {
       const link = document.createElement('a')
@@ -56,7 +62,7 @@ class Footer extends HTMLElement {
 
       link.href = url
 
-      linkIcon.src = `./src/assets/icons/${icon}.svg`
+      linkIcon.src = icon
       linkIcon.alt = name
 
       link.appendChild(linkIcon)
@@ -66,7 +72,7 @@ class Footer extends HTMLElement {
     linksWrapper.classList.add('links-wrapper')
 
     bottomWrapper.classList.add('bottom-wrapper')
-    bottomWrapper.appendChild(logo)
+    bottomWrapper.appendChild(footerLogo)
     bottomWrapper.appendChild(linksWrapper)
 
     footer.appendChild(mainWrapper)

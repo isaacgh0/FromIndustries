@@ -1,0 +1,48 @@
+fi-block-message {
+  div.block-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-block-padding);
+    text-align: center;
+    width: 100%;
+    background: var(--clr-brand-secondary);
+
+    &.message-info {
+      img { filter: var(--clr-brand-info-filter) }
+      p { color: var(--clr-brand-info) }
+      div { background: var(--clr-brand-info) }
+    }
+
+    &.message-danger {
+      img { filter: var(--clr-brand-danger-filter) }
+      p { color: var(--clr-brand-danger) }
+      div { background: var(--clr-brand-danger) }
+    }
+
+    &.message-success {
+      img { filter: var(--clr-brand-success-filter) }
+      p { color: var(--clr-brand-success) }
+      div { background: var(--clr-brand-success) }
+    }
+    
+    img {
+      width: 2.2rem;
+      aspect-ratio: 1 / 1;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: var(--font-size-regular);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      padding-inline: var(--size-default-inline-padding);
+    }
+
+    div {
+      width: 100%;
+      height: 0.2rem;
+    }
+  }
+}

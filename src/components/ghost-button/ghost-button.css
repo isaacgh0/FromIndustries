@@ -6,12 +6,13 @@ fi-ghost-button {
     background-color: transparent;
     color: var(--clr-brand-secondary);
     border: none;
+    border-radius: 0.5rem;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    outline: 4px solid var(--clr-brand-secondary);
-    outline-offset: -4px;
+    outline: 0.3rem solid var(--clr-brand-secondary);
+    outline-offset: -0.3rem;
     transition: background-color 0.1s var(--anim-default), color 0.1s var(--anim-default);
     
     padding: 0.8rem 1.6rem;

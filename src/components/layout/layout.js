@@ -4,9 +4,9 @@ class Layout extends HTMLElement {
   }
   
   connectedCallback() {
-    const styles = this.getAttribute('styles')
+    const stylesheet = document.querySelector('link[rel="stylesheet"]')
 
-    if (!styles) return;
+    if (!stylesheet) return;
 
     this.attachShadow({ mode: 'open' })
 
@@ -15,9 +15,10 @@ class Layout extends HTMLElement {
     const main = document.createElement('main')
     const slot = document.createElement('slot')
     const fiFooter = document.createElement('fi-footer')
+    const stylesRef = stylesheet.getAttribute('href')
 
     link.setAttribute('rel', 'stylesheet')
-    link.setAttribute('href', styles)
+    link.setAttribute('href', stylesRef)
     
     main.appendChild(slot)
     
